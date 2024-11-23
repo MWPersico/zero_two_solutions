@@ -1,5 +1,6 @@
 package br.senac.ead.zero_two_solutions.Controllers;
 
+import br.senac.ead.zero_two_solutions.Entities.Identificavel;
 import br.senac.ead.zero_two_solutions.Services.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public abstract class BaseController<TEntity, TKey> {
+public abstract class BaseController<TEntity extends Identificavel<TKey>, TKey> {
 
     protected BaseService<TEntity, TKey> service;
 
