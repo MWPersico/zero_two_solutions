@@ -236,3 +236,56 @@ form button:hover a {
     color: #000;
     cursor: pointer;
 }
+
+.btn-deletar{
+    background-color: #ff5252;
+    margin-top:10px;
+    display:none;
+}
+
+.crud-table-container{
+    width:100%;
+    height:fit-content;
+    border-collapse: collapse;
+    margin: 20px 0;
+    display:flex;
+    justify-content: center;
+}
+
+.crud-table-container th, .crud-table-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+  
+.crud-table-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.crud-table-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.crud-table-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.crud-table-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.crud-table-container a:hover {
+  text-decoration: underline;
+}
+
+.crud-table-container:empty {
+  display: none;
+}
+
+.crud-table-container:empty + p {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}

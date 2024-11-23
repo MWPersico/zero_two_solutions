@@ -77,12 +77,15 @@ export default class GenericFormHandler {
         deleteButton.addEventListener("click", async event => {
             event.preventDefault();
           if (confirm(`Deseja realmente deletar ${this.entityName}?`)) {
-            await this.apiClient.delete(`${this.entityName}/${this.id}`);
-            alert(`${this.entityName} deletado com sucesso!`);
-
-            const url = new URL(window.location.href);
-            url.searchParams.delete("id");
-            window.location.href = url.toString();
+            try{
+              await this.apiClient.delete(`${this.entityName}/${this.id}`);
+              alert(`${this.entityName} deletado com sucesso!`);
+              const url = new URL(window.location.href);
+              url.searchParams.delete("id");
+              window.location.href = url.toString();
+            }catch{
+              alert(`Erro a deletar, pode ser que essa entidade esteja associada a outras importantes!`);
+            }
           }
         });
       }
