@@ -3,7 +3,7 @@ package br.senac.ead.zero_two_solutions.Entities;
 import jakarta.persistence.*;
 
 @MappedSuperclass
-public abstract class Pessoa {
+public abstract class Pessoa implements Identificavel<Integer>{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,10 +21,12 @@ public abstract class Pessoa {
         this.telefone = telefone;
     }
 
+    @Override
     public Integer getId() {
         return id;
     }
 
+    @Override
     public void setId(Integer id) {
         this.id = id;
     }

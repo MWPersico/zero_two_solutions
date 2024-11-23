@@ -1,5 +1,6 @@
 package br.senac.ead.zero_two_solutions.Services;
 
+import br.senac.ead.zero_two_solutions.Entities.Identificavel;
 import br.senac.ead.zero_two_solutions.Repositories.BaseRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 
 import java.util.List;
 
-public abstract class BaseService<TEntity, TKey> {
+public abstract class BaseService<TEntity extends Identificavel<TKey>, TKey> {
 
     protected BaseRepository<TEntity, TKey> repository;
 
@@ -43,6 +44,7 @@ public abstract class BaseService<TEntity, TKey> {
         if (!repository.existsById(id)) {
             throw new EntityNotFoundException("Entidade com id " + id + " não encontrada.");
         }
+        entity.setId(id);
         return repository.save(entity);
     }
 }

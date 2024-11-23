@@ -1,5 +1,8 @@
 package br.senac.ead.zero_two_solutions.Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.Date;
@@ -19,6 +22,7 @@ public class Professor extends Pessoa{
     private Date dataNascimento;
 
     @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Disciplina> disciplinas = new HashSet<>();
 
     public Professor(){}

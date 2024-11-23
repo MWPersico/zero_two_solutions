@@ -13,18 +13,26 @@ public class Fornecedor extends Pessoa {
     private String tipoServico;
     private Date inicioVigencia;
     private Date fimVigencia;
-    private String CNPJ;
+    private String cnpj;
 
     public Fornecedor(){}
 
-    public Fornecedor(Integer id, String nome, String endereco, String telefone, String CNPJ, String contrato, String produto, String tipoServico, Date inicioVigencia, Date fimVigencia) {
+    public Fornecedor(Integer id, String nome, String endereco, String telefone, String cnpj, String contrato, String produto, String tipoServico, Date inicioVigencia, Date fimVigencia) {
         super(id, nome, endereco, telefone);
         this.contrato = contrato;
         this.produto = produto;
         this.tipoServico = tipoServico;
         this.inicioVigencia = inicioVigencia;
         this.fimVigencia = fimVigencia;
-        this.CNPJ = CNPJ;
+        this.cnpj = cnpj;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cpnj) {
+        this.cnpj = cpnj;
     }
 
     public String getContrato() {
