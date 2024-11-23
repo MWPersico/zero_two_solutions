@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoa Jurídica</title>
+  <link rel="icon" href="z2_solutions.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="z2_solutions.png" alt="Logo Zero Two Solutions" class="logo">
+      <h1>Cadastro de Pessoa Jurídica</h1>
+    </div>
+  </header>
+  <main>
+    <form id="form-pessoaJuridica">
+        <label for="razao-social">Razão Social:</label>
+        <input type="text" name="nome" id="razao-social" placeholder="Digite a razão social" required>
+  
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ" required>
+  
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Digite o endereço" required>
+  
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Digite o telefone" required>
+  
+        <button type="submit">Salvar</button>
+        <a href="dashboard.html" class="cancel-link">Cancelar</a>
+        <button id="delete-btn" class="btn-deletar">Deletar</button>
+      </form>
+      <div class="crud-table-container">
+        <table id="table-pessoaJuridica" class="crud-table"></table>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Zero Two Solutions. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="js/cadastro-pessoaJuridica.js"></script>
+  </body>
+  </html>
+  

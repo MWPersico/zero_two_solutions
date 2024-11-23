@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoa Física</title>
+  <link rel="icon" href="z2_solutions.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="z2_solutions.png" alt="Logo Zero Two Solutions" class="logo">
+      <h1>Cadastro de Pessoa Física</h1>
+    </div>
+  </header>
+  <main>
+    <form id="form-pessoaFisica">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" id="endereco" placeholder="Digite o Endereço" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone" placeholder="Digite o telefone" required>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" name="dataNascimento" id="dataNascimento" required>
+
+      <button type="submit">Salvar</button>
+      <a href="dashboard.html" class="cancel-link">Cancelar</a>
+      <button id="delete-btn" class="btn-deletar">Deletar</button>
+    </form>
+    <div class="crud-table-container">
+      <table id="table-pessoaFisica" class="crud-table"></table>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Zero Two Solutions. Todos os direitos reservados.</p>
+  </footer>
+  <script type="module" src="js/cadastro-pessoaFisica.js"></script>
+</body>
+</html>
+

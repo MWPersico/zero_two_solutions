@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Professor</title>
+  <link rel="icon" href="z2_solutions.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="z2_solutions.png" alt="Logo Zero Two Solutions" class="logo">
+      <h1>Cadastro de Professor</h1>
+    </div>
+  </header>
+  <main>
+    <form id="form-professor">
+    
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" required>
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Digite o endereço" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Digite o telefone" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" name="dataNascimento" id="dataNascimento" required>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Informações Acadêmicas</legend>
+
+        <label for="carga-horaria">Matricula:</label>
+        <input type="number" name="matricula" id="matricula" placeholder="Digite a matricula" required>
+        
+        <label for="carga-horaria">Carga Horária:</label>
+        <input type="number" name="cargaHoraria" id="carga-horaria" placeholder="Digite a carga horária" required>
+        
+        <label for="tipo-vinculo">Tipo de Vínculo:</label>
+        <input type="text" name="tipoVinculo" id="tipo-vinculo" placeholder="Digite o tipo de vínculo" required>
+
+        <label for="titulacao">Titulação:</label>
+        <input type="text" name="titulacao" id="titulacao" placeholder="Digite a titulação" required>
+        
+        <label for="salario">Salário:</label>
+        <input type="number" name="salario" id="salario" placeholder="Digite o salário" step="0.01" required>
+      </fieldset>
+      
+      <button type="submit">Salvar</button>
+      <a href="dashboard.html" class="cancel-link">Cancelar</a>
+      <button id="delete-btn" class="btn-deletar">Deletar</button>
+      
+      </form>
+      <div class="crud-table-container">
+        <table id="table-professor" class="crud-table"></table>
+      </div>
+      </main>
+      <footer>
+        <p>&copy; 2024 Zero Two Solutions. Todos os direitos reservados.</p>
+      </footer>
+      <script type="module" src="js/cadastro-professor.js"></script>
+      </body>
+      </html>
+      
+

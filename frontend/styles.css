@@ -1,0 +1,291 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo do container de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #5c67f2; /* Azul principal */
+}
+
+/* Estilo dos inputs */
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #5c67f2; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background: #4453c3; /* Azul mais escuro */
+}
+
+/* Link dentro do formulário */
+.login-form p {
+    margin-top: 10px;
+}
+
+.login-form a {
+    color: #5c67f2; /* Azul principal */
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    color: #4453c3; /* Azul mais escuro */
+}
+
+header {
+    background: #050b5c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Estilo do formulário de cadastro */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4453c3;
+}
+
+img {
+    width: 60%;
+    max-width: 260px;
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form button:hover a {
+    color: inherit;
+}
+
+/* Botões do Dashboard */
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dashboard-buttons button {
+    padding: 20px 40px;
+    background: #5c67f2; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 250px;
+}
+
+.dashboard-buttons button:hover {
+    background: #4453c3; /* Azul mais escuro */
+}
+
+/* Estilo do link de cancelamento */
+.cancel-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cancel-link:hover {
+    background-color: #e53935;
+}
+
+.custom-select {
+    width: 100%;
+    min-height:35px;
+    margin-bottom:15px;
+}
+  
+.custom-select select {
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-deletar{
+    background-color: #ff5252;
+    margin-top:10px;
+    display:none;
+}
+
+.crud-table-container{
+    width:100%;
+    height:fit-content;
+    border-collapse: collapse;
+    margin: 20px 0;
+    display:flex;
+    justify-content: center;
+}
+
+.crud-table-container th, .crud-table-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+  
+.crud-table-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.crud-table-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.crud-table-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.crud-table-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.crud-table-container a:hover {
+  text-decoration: underline;
+}
+
+.crud-table-container:empty {
+  display: none;
+}
+
+.crud-table-container:empty + p {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
