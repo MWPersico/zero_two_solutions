@@ -33,6 +33,7 @@ O sistema foi desenvolvido para fins educacionais, explorando conceitos de front
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)  
 ![H2 Database](https://img.shields.io/badge/H2_Database-0078D6?style=for-the-badge&logo=databricks&logoColor=white)  
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)  
 
@@ -41,6 +42,7 @@ O sistema foi desenvolvido para fins educacionais, explorando conceitos de front
 ## Programas Utilizados  
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=White)  
+![IntelliJ](https://img.shields.io/badge/Intellij%20Idea-000?logo=intellij-idea&style=for-the-badge)  
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)  
 
 ---
@@ -48,7 +50,8 @@ O sistema foi desenvolvido para fins educacionais, explorando conceitos de front
 ## Pré-requisitos  
 Para rodar o projeto, você precisará de:  
 - Um editor de texto, como VS Code.  
-- Um navegador moderno (Chrome, Firefox, Edge).  
+- Um navegador moderno (Chrome, Firefox, Edge).
+- JDK ^17 configurada.  
 
 ## Como Rodar o Projeto  
 
@@ -62,17 +65,21 @@ Para rodar o projeto, você precisará de:
 
 3. Abra o arquivo HTML principal em seu navegador:
 
-   - Para sistemas locais, abra login.html.
+   - Para sistemas locais, abra dashboard.html.
 
-4. Acesse a página de login e use as opções de cadastro e visualização disponíveis.
+4. Execute e garanta que o backend do projeto está funcionando para realizar as operações na aplicação.
+
+5. Acesse a página do dashboard 'dashboard.html' e use as opções de cadastro e visualização disponíveis.
+
+
 
 ---
 
 ## Estrutura do Projeto
 
-gestao-universidades/ (exemplo)  
-├── assets/                       # Arquivos estáticos como imagens e ícones  
-├── styles.css 		                # Estilos do projeto  
+frontend                      # Frontend do projeto         
+├── js/                           # Arquivos javascript  
+├── styles.css 		             # Estilos do projeto  
 ├── cadastro.html                 # Página de cadastro  
 ├── login.html                    # Página de login  
 ├── cadastro-alunos.html          # Página de cadastro de alunos  
@@ -81,7 +88,8 @@ gestao-universidades/ (exemplo)
 ├── cadastro-pessoa-fisica.html   # Página de cadastro de pessoa física  
 ├── cadastro-pessoa-juridica.html # Página de cadastro de pessoa jurídica  
 ├── dashboard.html                # Painel administrativo  
-├── README.md                     # Documentação do projeto  
+backend/                      # Backend do projeto       
+README.md                     # Documentação do projeto  
 
 ---
 
@@ -105,7 +113,3 @@ Quer ajudar a melhorar o projeto? Siga os passos:
 
 ## Licença  
 Este projeto está licenciado sob a licença MIT. Para mais detalhes, veja o arquivo LICENSE.  (nao sei)
-
-
-
-
