@@ -15,29 +15,31 @@
     </div>
   </header>
   <main>
-    <form>
+    <form id="form-pessoaFisica">
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" placeholder="Digite o nome" required>
+      <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
 
       <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" placeholder="Digite o CPF" required>
+      <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
 
       <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" placeholder="Digite o Endereço" required>
+      <input type="text" name="endereco" id="endereco" placeholder="Digite o Endereço" required>
 
       <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" placeholder="Digite o telefone" required>
+      <input type="tel" name="telefone" id="telefone" placeholder="Digite o telefone" required>
 
       <label for="dataNascimento">Data de Nascimento:</label>
-      <input type="date" id="dataNascimento" required>
+      <input type="date" name="dataNascimento" id="dataNascimento" required>
 
       <button type="submit">Salvar</button>
+      <button id="delete-btn" style="background-color: red;display: none;">Deletar</button>
       <a href="dashboard.html" class="cancel-link">Cancelar</a>
     </form>
   </main>
   <footer>
     <p>&copy; 2024 Zero Two Solutions. Todos os direitos reservados.</p>
   </footer>
+  <script type="module" src="js/cadastro-pessoaFisica.js"></script>
 </body>
 </html>
 

@@ -15,22 +15,22 @@
     </div>
   </header>
   <main>
-    <form>
+    <form id="form-fornecedor">
     
       <fieldset>
         <legend>Dados da Empresa</legend>
         
         <label for="razao-social">Razão Social:</label>
-        <input type="text" id="razao-social" placeholder="Digite a razão social" required>
+        <input type="text" name="nome" id="razao-social" placeholder="Digite a razão social" required>
   
         <label for="cnpj">CNPJ:</label>
-        <input type="text" id="cnpj" placeholder="Digite o CNPJ" required>
+        <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ" required>
   
         <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" placeholder="Digite o endereço" required>
+        <input type="text" name="endereco" id="endereco" placeholder="Digite o endereço" required>
   
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" placeholder="Digite o telefone" required>
+        <input type="tel" name="telefone" id="telefone" placeholder="Digite o telefone" required>
       </fieldset>
 
   
@@ -38,13 +38,13 @@
         <legend>Informações Contratuais</legend>
         
         <label for="contrato">Número do Contrato:</label>
-        <input type="text" id="contrato" placeholder="Digite o número do contrato" required>
+        <input type="text" name="contrato" id="contrato" placeholder="Digite o número do contrato" required>
         
         <label for="produto">Produto:</label>
-        <input type="text" id="produto" placeholder="Digite o produto" required>
+        <input type="text" name="produto" id="produto" placeholder="Digite o produto" required>
         
         <label for="tipo-servico">Tipo de Serviço:</label>
-        <select id="tipo-servico" class="custom-select" required>
+        <select name="tipoServico" id="tipo-servico" class="custom-select" required>
           <option value="" disabled selected>Selecione o tipo de serviço</option>
           <option value="produtos">Fornecimento de Produtos</option>
           <option value="servicos">Prestação de Serviços</option>
@@ -52,20 +52,22 @@
         </select>
         
         <label for="inicio-vigencia">Início da Vigência:</label>
-        <input type="date" id="inicio-vigencia" required>
+        <input type="date" name="inicioVigencia" id="inicio-vigencia" required>
         
         <label for="fim-vigencia">Fim da Vigência:</label>
-        <input type="date" id="fim-vigencia" required>
+        <input type="date" name="fimVigencia" id="fim-vigencia" required>
       </fieldset>
       
       
       <button type="submit">Salvar</button>
+      <button id="delete-btn" style="background-color: red;display: none;">Deletar</button>
       <a href="dashboard.html" class="cancel-link">Cancelar</a>
     </form>
   </main>
   <footer>
     <p>&copy; 2024 Zero Two Solutions. Todos os direitos reservados.</p>
   </footer>
+  <script type="module" src="js/cadasro-fornecedor.js"></script>
 </body>
 </html>
 
