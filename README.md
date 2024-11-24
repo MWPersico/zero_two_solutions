@@ -13,7 +13,9 @@ Um simples projeto acadêmico para modelagem e criação de um sistema de cadast
 - [Como Rodar o Projeto](#como-rodar-o-projeto)  
 - [Estrutura do Projeto](#estrutura-do-projeto)  
 - [Contribuições](#contribuições)  
-- [Licença](#licença)  
+- [Protótipo](#protótipo)
+- [API](#api)
+- [Telas](#telas)
 
 ---
 
@@ -111,5 +113,37 @@ Quer ajudar a melhorar o projeto? Siga os passos:
 
 ---
 
-## Licença  
-Este projeto está licenciado sob a licença MIT. Para mais detalhes, veja o arquivo LICENSE.  (nao sei)
+## Protótipo
+
+---
+
+## API
+A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em memória para persistência e HIbernate como ferramenta de ORM, disponibilizando operações de leitura, criação, deleção e atualização de entidades.
+
+Alunos:
+![alunos](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_aluno.png)
+
+Professores:
+![professores](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_professor.png)
+
+Pessoas Jurídicas:
+![pj](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_pessoaJuridica.png)
+
+Pessoas Físicas:
+![pf](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_pessoaFisica.png)
+
+Fornecedores:
+![fornecedores](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_fornecedor.png)
+
+Cursos:
+![cursos](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_curso.png)
+
+Disciplinas:
+![discplinas](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/api_disciplina.png)
+
+Especificando um id na rota, é possível recuperar entidades por ID, a mesma rota é utilizada para deletar e atualizar as mesmas.
+---
+
+## Telas
+
+---
