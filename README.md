@@ -153,5 +153,40 @@ Especificando um id na rota, é possível recuperar entidades por ID, a mesma ro
 ---
 
 ## Telas
+As telas para cadastro de cada uma das entidades principais foi desenvolvida utilizando HTML, CSS e JavaScript e se baseando totalmente no protótipo desenvolvido no figma. Os formulários e tabelas consomem a API para recuperar, deletar, cadastrar e atualizar as entidades de maneira dinâmica, as telas dos formulários são capazes de realizar todas as operações:
+
+Alunos:
+
+![alunos](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/tela_aluno.png)
+
+Professores:
+
+![professores](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/tela_professor.png)
+
+Pessoas Jurídicas:
+
+![pj](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/tela_pessoaJuridica.png)
+
+Pessoas Físicas:
+
+![pf](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/tela_pessoaFisica.png)
+
+Fornecedores:
+
+![fornecedores](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/tela_fornecedor.png)
+
+Também foram desenvolvido o dashboard para acessar os formulários e as telas de login e cadastro que será aproveitada futuramente para autenticação no projeto:
+
+Dashboard:
+
+![dashboard](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/dashboard.png)
+
+Login:
+
+![login](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/login.png)
+
+Cadastro:
+
+![cadastro](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/cadastro.png)
 
 ---
