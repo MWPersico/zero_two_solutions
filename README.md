@@ -118,6 +118,12 @@ Foi desenvolvido um protótipo de telas do projeto com Figma, que serviram para 
 
 Link do protótipo: [Protótipo no Figma](https://www.figma.com/design/57RTOGtbTeYvhWRil7zInx/Projeto-Integrador?node-id=0-1&node-type=canvas&t=YtbRUJF0KswUbegc-0)
 
+![prototipo](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/prototipo.png)
+
+Além do protótipo das telas, uma forte base para construção do backend incluindo a criação e associação das entidades foi o diagrama UML desenvolvido na primeira etapa do projeto, que define as entidades e suas relações e campos, essencial para construção da API:
+
+![uml](https://raw.githubusercontent.com/MWPersico/zero_two_solutions/refs/heads/main/projeto/imagens/uml.png)
+
 ---
 
 ## API
