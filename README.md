@@ -114,7 +114,9 @@ Quer ajudar a melhorar o projeto? Siga os passos:
 ---
 
 ## Protótipo
-- [Protótipo no Figma](https://www.figma.com/design/57RTOGtbTeYvhWRil7zInx/Projeto-Integrador?node-id=0-1&node-type=canvas&t=YtbRUJF0KswUbegc-0)
+Foi desenvolvido um protótipo de telas do projeto com Figma, que serviram para o desenvolvimento do front-end do projeto em com HTML e CSS, fornecendo uma base sólida para criação das telas.
+
+Link do protótipo: [Protótipo no Figma](https://www.figma.com/design/57RTOGtbTeYvhWRil7zInx/Projeto-Integrador?node-id=0-1&node-type=canvas&t=YtbRUJF0KswUbegc-0)
 
 ---
 
