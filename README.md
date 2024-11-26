@@ -23,8 +23,8 @@ Um simples projeto acadêmico para modelagem e criação de um sistema de cadast
 O projeto simula um sistema básico de gerenciamento acadêmico com foco no cadastro e gestão de pessoas e entidades relacionadas a universidades. As principais funcionalidades incluem:
 
 - Cadastro de diferentes tipos de usuários: Pessoa Física, Pessoa Jurídica, Professores, Alunos e Fornecedores.
-- Visualização organizada dos dados cadastrados. (nao sei)
-- Simulação de login para acesso ao sistema administrativo. (nao sei)
+- Visualização organizada dos dados cadastrados. 
+- Simulação de login para acesso ao sistema administrativo. 
 
 O sistema foi desenvolvido para fins educacionais, explorando conceitos de front-end, organização de dados e princípios de usabilidade.
 
